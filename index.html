@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Aditya Bodapati | Portfolio</title>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Aditya Bodapati</h1>
+      <p>Web Developer | Programmer | Creator</p>
+      <a href="" class="btn">View My Work</a>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html"">Resume</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="careerexpo.html">Career</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+   
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-container">
+        <div class="about-text">
+          <p>
+            This website is a space where you can learn more about who I am: my goals, interests, hobbies, and aspirations for the future. A few of my favorite pastimes include programming, playing video games and basketball, spending time with friends, and constantly exploring new skills and technologies. Academically, I’m working toward earning a degree in Computer Science from UCLA. My long-term career goal is to become a cybersecurity analyst and eventually launch my own tech business. My passion for cybersecurity has grown steadily over the years. What started as a curiosity about how systems work and how they can be broken evolved into a deep interest in protecting digital environments. From experimenting with basic encryption, learning about real-world cyber threats, or understanding how networks are secured, each step has solidified my desire to pursue cybersecurity as a career.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="newpfp.png" class="profile-pic">
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="projects">
+      <h2>Projects</h2>
+        <p>This page showcases some of my most significant projects from high school, along with independent work I’ve undertaken on my own.</p>
+    </section>
+
+    <section id="career">
+      <h2>Career Exploration</h2>
+      <p>This page highlights my career-related experiences throughout the engineering program, including field trips, guest speakers, mentorship, and hands-on opportunities like internships and volunteer work. Each experience has helped shape my understanding of the industry, build practical skills, and fuel my passion for engineering.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:adityatb0301@gmail.com">adityatb0301@gmail.com</a></p>
+        <p><strong>Phone Number:</strong> 925-307-0672</p>
+        <p><strong>LinkedIn:</strong> <a href="" target="_blank">Aditya Bodapati</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/AdityaBodapati1" target="_blank">@AdityaBodapati1</a></p>
+      </div>
+    </section>
+  </main>
+
+
+<script>
+    const contactLink = document.querySelector('.navbar a[href="#contact"]');
+    const contactSection = document.getElementById('contact');
+
+    contactLink.addEventListener('click', () => {
+
+      setTimeout(() => {
+        contactSection.classList.add('highlight');
+        setTimeout(() => {
+          contactSection.classList.remove('highlight');
+        }, 2000); 
+      }, 300);
+    });
+  </script>
+
+
+
+</body>
+</html>

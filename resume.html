@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Aditya Bodapati | Portfolio</title>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Resume</h1>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html"">Resume</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="careerexpo.html">Career</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="iframe-container">
+  <iframe 
+    src="https://docs.google.com/document/d/e/2PACX-1vRixdzNK76mpjKzjalkgAsNmhWvAuTmR1E7-Bp5aRETaNeeUT0nBq95J5mIE_HifwjjJPHaCprUgbb0/pub?embedded=true" 
+    width="80%" 
+    height="1000px" 
+    style="border: none;"
+    >
+  </iframe>
+   </div>
+
+  
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+      <p><strong>Email:</strong> <a href="mailto:adityatb0301@gmail.com">adityatb0301@gmail.com</a></p>
+      <p><strong>Phone Number:</strong> 925-307-0672</p>
+      <p><strong>LinkedIn:</strong> <a href="" target="_blank">Aditya Bodapati</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/AdityaBodapati1" target="_blank">@AdityaBodapati1</a></p>
+    </div>
+  </section>
+  </main>
+
+
+  <script>
+      const contactLink = document.querySelector('.navbar a[href="#contact"]');
+      const contactSection = document.getElementById('contact');
+
+      contactLink.addEventListener('click', () => {
+
+        setTimeout(() => {
+          contactSection.classList.add('highlight');
+          setTimeout(() => {
+            contactSection.classList.remove('highlight');
+          }, 2000); 
+        }, 300);
+      });
+    </script>
+
+
+
+  </body>
+  </html>
